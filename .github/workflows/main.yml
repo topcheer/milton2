@@ -33,36 +33,23 @@ jobs:
           distribution: temurin
       - name: Setup Java  Home
         run: export  JAVA_HOME=/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/11.0.13-8/x64
-      - name: Maven Release and Publish
-        # You may pin to the exact commit or the version.
-        # uses: mg-smartrent/github-actions-maven-release@5f387c0d77b22da293e9812d43ab90cdc49f475a
-        uses: mg-smartrent/github-actions-maven-release@v1.5
-        with:
-          # Maven server repository username
-          maven-repo-server-id: dian
-          maven-repo-server-username: ${{ secrets.REPO_USER }}
-          # Maven server repository password
-          maven-repo-server-password: ${{ secrets.REPO_PASSWORD }}
-          # The git user name for commiting the release
-          git-release-bot-name: "git-action"
-          # The git user email for commiting the release
-          git-release-bot-email: "topcheer@me.com"
-          # Github access token. https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
-          access-token: ${{ secrets.GITHUB_TOKEN }}
-          # Inject arguments in mvn docker build and push.
-          # Publish the released artifact to GitHub Packages
-          maven-release-publish: true
-          # Publish the new post release snapshot artifact to GitHub Packages
-          maven-snapshot-publish: true
-          # Inject arguments in mvn publish command, ex: -Dskip.unit.tests=true - to skip the tests
-          maven-publish-args: "-DskipTests=true"
-          # Build and Push docker image of the released version.
-          maven-release-push-docker: true
-          # Build and Push docker image of the new post release snapshot version.
-          maven-snapshot-push-docker: true
-          # Inject arguments in mvn docker build and push.
-          # Docker registry username
-          maven-docker-user: ${{ secrets.DOCKER_USER }}
-          # Docker registry password our auth token
-          maven-docker-password: ${{ secrets.DOCKER_TOKEN }}
 
+      - name: Java Maven release
+        # You may pin to the exact commit or the version.
+        # uses: qcastel/github-actions-maven-release@8db2f7e711f53486d5397fa97262add04a098473
+        uses: qcastel/github-actions-maven-release@v1.12.12
+        with:
+          # Maven server repository id to push the artifacts to
+          maven-repo-server-id: dian
+          # Maven server repository username
+          maven-repo-server-username: ${{secrets.REPO_USER}}
+          # Maven server repository password
+          maven-repo-server-password: ${{secrets.REPO_PASSWORD}}
+          # The maven arguments for the release
+          # The ID of your registry. For example, for docker hub, it is `registry.hub.docker.com`
+          docker-registry-id: registry.hub.docker.com
+          # The username for your docker registry
+          docker-registry-username: ${{secrets.DOCKER_USER}}
+          # The password for your docker registry
+          docker-registry-password: ${{secrets.DOCKER_TOKEN}}
+          access-token: ${{secrets.GITHUB_TOKEN}}
