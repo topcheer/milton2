@@ -47,3 +47,4 @@ jobs:
           # The password for your docker registry
           docker-registry-password: ${{secrets.DOCKER_TOKEN}}
           access-token: ${{secrets.GITHUB_TOKEN}}
+          maven-args: "-Dmaven.javadoc.skip=true -DskipTests -DskipITs -Ddockerfile.skip -DdockerCompose.skip"
