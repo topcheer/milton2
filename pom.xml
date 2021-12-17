@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.milton</groupId>
     <artifactId>milton</artifactId>
-    <version>3.1.0.304-SNAPSHOT</version>
+    <version>3.1.0.304</version>
     <packaging>pom</packaging>
     <name>milton</name>
     <description>With Milton WebDAV Server Library for Java you can create your own WebDAV server, add WebDAV support to your existing Java project or DAV-enable your CMS/DMS/CRM.</description>
@@ -17,7 +17,7 @@
     <scm>
         <connection>scm:git:https://github.com/topcheer/milton2.git</connection>
         <url>http://github.com/topcheer/milton2/tree/master</url>
-      <tag>HEAD</tag>
+      <tag>milton-3.1.0.304</tag>
   </scm>
     <distributionManagement>
         <snapshotRepository>

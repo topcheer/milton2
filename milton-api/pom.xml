@@ -21,7 +21,7 @@
     <parent>
         <groupId>io.milton</groupId>
         <artifactId>milton</artifactId>
-        <version>3.1.0.304-SNAPSHOT</version>
+        <version>3.1.0.304</version>
     </parent>
     <groupId>io.milton</groupId>
     <artifactId>milton-api</artifactId>
