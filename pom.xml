@@ -18,6 +18,7 @@
         <connection>scm:git:https://github.com/topcheer/milton2.git</connection>
         <url>http://github.com/topcheer/milton2/tree/master</url>
     </scm>
+    
     <distributionManagement>
         <snapshotRepository>
             <id>dian</id>
