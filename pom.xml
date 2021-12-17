@@ -15,17 +15,17 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:git@github.com:miltonio/milton2.git</connection>
-        <url>http://github.com/miltonio/milton2/tree/master</url>
+        <connection>scm:git:git@github.com:topcheer/milton2.git</connection>
+        <url>http://github.com/topcheer/milton2/tree/master</url>
     </scm>
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+            <id>dian</id>
+            <url>https://repo.liop.dev/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>dian</id>
+            <url>https://repo.liop.dev/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
     <developers>
