@@ -13,7 +13,7 @@
             <url>https://milton.io/media/2123/milton-license-agreement.rtf</url>
         </license>
     </licenses>
-    
+
     <scm>
         <connection>scm:git:https://github.com/topcheer/milton2.git</connection>
         <url>http://github.com/topcheer/milton2/tree/master</url>
@@ -162,12 +162,5 @@
             <name>bintray</name>
             <url>https://dl.bintray.com/milton/Milton</url>
         </repository>
-        <!--
-                <repository>
-                    <id>mvnrepository.com</id>
-                    <name>mvnrepository.com</name>
-                    <url>https://www.mvnrepository.com/artifacts</url>
-                </repository>
-        -->
     </repositories>
 </project>
