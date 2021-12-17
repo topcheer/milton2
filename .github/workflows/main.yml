@@ -31,7 +31,7 @@ jobs:
         # uses: qcastel/github-actions-maven-release@8db2f7e711f53486d5397fa97262add04a098473
         uses: qcastel/github-actions-maven-release@v1.12.12
         env:
-          JAVA_HOME: /usr/lib/jvm/java-11-openjdk/
+          JAVA_HOME: /usr/lib/jvm/java-17-openjdk/
         with:
           # Maven server repository id to push the artifacts to
           maven-repo-server-id: dian
