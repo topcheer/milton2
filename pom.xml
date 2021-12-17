@@ -13,6 +13,7 @@
             <url>https://milton.io/media/2123/milton-license-agreement.rtf</url>
         </license>
     </licenses>
+    
     <scm>
         <connection>scm:git:https://github.com/topcheer/milton2.git</connection>
         <url>http://github.com/topcheer/milton2/tree/master</url>
